@@ -10,12 +10,12 @@ This project implements a **hardware-accelerated CNN inference system** on Xilin
 
 ### Key Features
 
-- ✅ **MobileNetV1** quantized INT8 model for efficient inference
-- ✅ **FPGA acceleration** for convolution, activation, and pooling layers
-- ✅ **HLS-based design** using Vitis HLS for rapid development
-- ✅ **Real-time performance** targeting ≥15 FPS on 224×224 images
-- ✅ **Comprehensive benchmarking** with CPU vs FPGA comparison
-- ✅ **Optimized resource utilization** for Zynq-7000 series
+- **MobileNetV1** quantized INT8 model for efficient inference
+- **FPGA acceleration** for convolution, activation, and pooling layers
+- **HLS-based design** using Vitis HLS for rapid development
+- **Real-time performance** targeting ≥15 FPS on 224×224 images
+- **Comprehensive benchmarking** with CPU vs FPGA comparison
+- **Optimized resource utilization** for Zynq-7000 series
 
 ## Project Structure
 
@@ -205,11 +205,11 @@ python3 run_benchmarks.py --iterations 100
 
 This project provides hands-on experience with:
 
-- ✅ **Embedded Edge AI:** Real-world CNN deployment on resource-constrained devices
-- ✅ **FPGA Acceleration:** Hardware design using HLS and Vivado
-- ✅ **Hardware/Software Co-Design:** Optimal partitioning for heterogeneous systems
-- ✅ **Performance Optimization:** Profiling, benchmarking, and optimization techniques
-- ✅ **Quantization:** Model compression for efficient inference
+- **Embedded Edge AI:** Real-world CNN deployment on resource-constrained devices
+- **FPGA Acceleration:** Hardware design using HLS and Vivado
+- **Hardware/Software Co-Design:** Optimal partitioning for heterogeneous systems
+- **Performance Optimization:** Profiling, benchmarking, and optimization techniques
+- **Quantization:** Model compression for efficient inference
 
 ## Troubleshooting
 

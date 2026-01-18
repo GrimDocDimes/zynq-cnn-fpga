@@ -4,6 +4,7 @@
 
 // Data types
 typedef ap_fixed<16, 8> data_t;
+typedef ap_fixed<32, 16> acc_t; // Accumulator type
 
 // Pooling types
 enum PoolingType {

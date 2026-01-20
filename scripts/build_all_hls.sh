@@ -6,21 +6,25 @@ set -e
 echo "=== Building CNN HLS Accelerators ==="
 echo ""
 
-# Check if vitis_hls is available
-if ! command -v vitis_hls &> /dev/null; then
-    echo "Error: vitis_hls not found in PATH"
-    echo "Please source Vivado/Vitis settings:"
-    echo "  source /tools/Xilinx/Vitis_HLS/2020.2/settings64.sh"
+# Determine which HLS tool to use
+if command -v vitis_hls &> /dev/null; then
+    HLS_TOOL="vitis_hls"
+elif command -v vivado_hls &> /dev/null; then
+    HLS_TOOL="vivado_hls"
+else
+    echo "Error: Neither vitis_hls nor vivado_hls found in PATH"
+    echo "Please source Xilinx tools first:"
+    echo "  source /tools/Xilinx/Vivado/2019.2/settings64.sh"
     exit 1
 fi
 
-echo "Found Vitis HLS: $(which vitis_hls)"
+echo "Using HLS Tool: $HLS_TOOL"
 echo ""
 
 # Build convolution accelerator
 echo "=== Building Convolution Accelerator ==="
 cd ../hardware/hls/conv_accelerator
-vitis_hls -f run_hls.tcl
+$HLS_TOOL -f run_hls.tcl
 if [ $? -eq 0 ]; then
     echo "✓ Convolution accelerator built successfully"
 else
@@ -32,7 +36,7 @@ echo ""
 # Build activation accelerator
 echo "=== Building Activation Accelerator ==="
 cd ../activation
-vitis_hls -f run_hls.tcl
+$HLS_TOOL -f run_hls.tcl
 if [ $? -eq 0 ]; then
     echo "✓ Activation accelerator built successfully"
 else
@@ -44,7 +48,7 @@ echo ""
 # Build pooling accelerator
 echo "=== Building Pooling Accelerator ==="
 cd ../pooling
-vitis_hls -f run_hls.tcl
+$HLS_TOOL -f run_hls.tcl
 if [ $? -eq 0 ]; then
     echo "✓ Pooling accelerator built successfully"
 else

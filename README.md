@@ -50,7 +50,8 @@ prjnew/
 ## Hardware Requirements
 
 - **FPGA Board:** Xilinx Zynq-based development board
-  - Recommended: ZedBoard, Zybo Z7-20, or similar Zynq-7000 series
+  - **Target Platform:** PYNQ-Z2 (XC7Z020-1CLG400C)
+  - Compatible: ZedBoard, Zybo Z7-20 (requires changing part number in scripts)
   - Minimum: Zynq-7010 or higher
 - **Memory:** 512MB DDR3 or more
 - **Storage:** SD card (≥4GB) for boot and filesystem

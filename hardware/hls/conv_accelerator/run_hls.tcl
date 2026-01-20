@@ -4,7 +4,7 @@
 # Project settings
 set proj_name "conv_accelerator_proj"
 set top_func "conv_accelerator"
-set device "xc7z020clg484-1"
+set device "xc7z020clg400-1"
 set period 10.0
 
 # Create new project

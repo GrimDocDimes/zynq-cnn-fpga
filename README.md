@@ -253,7 +253,6 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 ## References
 
 - [MobileNets: Efficient Convolutional Neural Networks](https://arxiv.org/abs/1704.04861)
-- [Xilinx Zynq-7000 SoC Technical Reference Manual](https://www.xilinx.com/support/documentation/user_guides/ug585-Zynq-7000-TRM.pdf)
 - [Vitis HLS User Guide](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2020_2/ug1399-vitis-hls.pdf)
 
 ## License

@@ -6,10 +6,10 @@ This guide provides step-by-step instructions for building the FPGA hardware des
 
 Before starting Vivado work, ensure you have:
 
-- ✅ **Completed model quantization** (`models/quantized/` exists)
-- ✅ **Vivado installed** (2020.2 or later)
-- ✅ **Vitis HLS installed** (for IP core generation)
-- ✅ **Target board** identified (e.g., ZedBoard, Zybo Z7-20)
+- **Completed model quantization** (`models/quantized/` exists)
+- **Vivado installed** (2020.2 or later)
+- **Vitis HLS installed** (for IP core generation)
+- **Target board** identified (e.g., ZedBoard, Zybo Z7-20)
 
 ## Workflow Overview
 

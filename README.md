@@ -61,7 +61,7 @@ prjnew/
 
 ### Development Tools
 
-- **Xilinx Vivado/Vitis HLS** (2020.2 or later)
+- **Xilinx Vivado/Vitis HLS** (2019.2 or later)
 - **ARM cross-compilation toolchain** (`arm-linux-gnueabihf-gcc`)
 - **Python 3.7+** with TensorFlow/PyTorch for model quantization
 - **OpenCV** (for image processing)

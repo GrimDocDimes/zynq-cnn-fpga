@@ -257,7 +257,7 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 
 ## License
 
-This project is licensed under the MIT License - see LICENSE file for details.
+This project is open source and available for educational and research purposes.
 
 ## Contributors
 
